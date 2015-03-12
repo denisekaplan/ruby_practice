@@ -3,7 +3,7 @@
 
 #**TODO ENTER CODE**
 # * Output all the methods of the Enumerable class to the console
-
+Enumerable.instance_methods.sort
 
 
 
@@ -14,12 +14,20 @@
 #   define some names, the each method will allow you to iterate over these
 #   This means that the class you create...say Person... will respond to Person.each.
 # * use a normal each loop to iterate over the class and output the names to the console.
+class Person
+	include Enumerable
 
+	def each
+	  yield "Ann"
+	  yield "Beth"
+	  yield "Chuck"
+	  yield "Dave"
+	end
+end
 
-
-
-
-
+Person.new.collect do |name|
+	"#{name}"
+end
 
 
 # **TODO ENTER CODE**

@@ -1,5 +1,5 @@
 ##Create an Empty class named 'Person'
-
+class Person < ActiveRecord::Base
 
 
 
@@ -9,6 +9,11 @@
 
 
 ##Define three properties on that class 'name','age','birthdate'
+class Person
+  attr_accessor :name, :age, :birthdate
+
+end
+
 
 
 

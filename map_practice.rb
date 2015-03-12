@@ -3,17 +3,24 @@
 
 #**TODO ENTER CODE**
 # * use map to upcase the names of an array
-
+names = ['grant', 'zach', 'ira']
+names.map(&:upcase)
 
 
 #**TODO ENTER CODE**
 # * use map to square(multiply the number by itself) an sequence of numbers
+class Array
+  def square!
+    self.map! {|num| num ** 2}
+  end
+end
 
+[1,2,3].square!
 
 
 #**TODO ENTER CODE**
 # * use map to add 1 to each number in a sequence of numbers
-
+map (+ 1) [1,2,3]
 
 
 ##Explain in words
